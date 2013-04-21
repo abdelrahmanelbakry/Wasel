@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnnotationManager.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

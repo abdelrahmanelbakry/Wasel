@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5076932E1720467300F71C75 /* AdoptingAnAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076932D1720467300F71C75 /* AdoptingAnAnnotation.m */; };
+		50D7AF7817243B53003B7F6A /* AnnotationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D7AF7717243B53003B7F6A /* AnnotationManager.m */; };
+		BC0642B1171AE40000796EBE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0642B0171AE40000796EBE /* MapKit.framework */; };
 		BCA7B385171AD50C0085DAB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA7B384171AD50C0085DAB6 /* UIKit.framework */; };
 		BCA7B387171AD50C0085DAB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA7B386171AD50C0085DAB6 /* Foundation.framework */; };
 		BCA7B389171AD50C0085DAB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA7B388171AD50C0085DAB6 /* CoreGraphics.framework */; };
@@ -22,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5076932C1720467300F71C75 /* AdoptingAnAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdoptingAnAnnotation.h; sourceTree = "<group>"; };
+		5076932D1720467300F71C75 /* AdoptingAnAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdoptingAnAnnotation.m; sourceTree = "<group>"; };
+		50D7AF7617243B53003B7F6A /* AnnotationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationManager.h; sourceTree = "<group>"; };
+		50D7AF7717243B53003B7F6A /* AnnotationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationManager.m; sourceTree = "<group>"; };
+		BC0642B0171AE40000796EBE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BCA7B380171AD50C0085DAB6 /* Wasel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wasel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA7B384171AD50C0085DAB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BCA7B386171AD50C0085DAB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0642B1171AE40000796EBE /* MapKit.framework in Frameworks */,
 				BCA7B385171AD50C0085DAB6 /* UIKit.framework in Frameworks */,
 				BCA7B387171AD50C0085DAB6 /* Foundation.framework in Frameworks */,
 				BCA7B389171AD50C0085DAB6 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +67,7 @@
 		BCA7B375171AD50C0085DAB6 = {
 			isa = PBXGroup;
 			children = (
+				BC0642B0171AE40000796EBE /* MapKit.framework */,
 				BCA7B38A171AD50C0085DAB6 /* Wasel */,
 				BCA7B383171AD50C0085DAB6 /* Frameworks */,
 				BCA7B381171AD50C0085DAB6 /* Products */,
@@ -92,6 +102,10 @@
 				BCA7B3A2171AD50C0085DAB6 /* ViewController.h */,
 				BCA7B3A3171AD50C0085DAB6 /* ViewController.m */,
 				BCA7B38B171AD50C0085DAB6 /* Supporting Files */,
+				5076932C1720467300F71C75 /* AdoptingAnAnnotation.h */,
+				5076932D1720467300F71C75 /* AdoptingAnAnnotation.m */,
+				50D7AF7617243B53003B7F6A /* AnnotationManager.h */,
+				50D7AF7717243B53003B7F6A /* AnnotationManager.m */,
 			);
 			path = Wasel;
 			sourceTree = "<group>";
@@ -180,6 +194,8 @@
 				BCA7B391171AD50C0085DAB6 /* main.m in Sources */,
 				BCA7B395171AD50C0085DAB6 /* AppDelegate.m in Sources */,
 				BCA7B3A4171AD50C0085DAB6 /* ViewController.m in Sources */,
+				5076932E1720467300F71C75 /* AdoptingAnAnnotation.m in Sources */,
+				50D7AF7817243B53003B7F6A /* AnnotationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +251,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -257,7 +273,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,6 +322,7 @@
 				BCA7B3A9171AD50C0085DAB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
