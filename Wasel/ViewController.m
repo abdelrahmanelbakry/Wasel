@@ -38,11 +38,14 @@
         CLLocationCoordinate2D locCoord = [self.mapView convertPoint:point toCoordinateFromView:self.mapView];
         
         // Then all you have to do is create the annotation and add it to the map
-        AdoptingAnAnnotation *dropPin = [[AdoptingAnAnnotation alloc] initWithLatitude:locCoord.latitude longitude:locCoord.longitude];
+        droppedPin = [[AdoptingAnAnnotation alloc] initWithLatitude:locCoord.latitude longitude:locCoord.longitude];
+        droppedPin.isFav = YES;
+        
+        [self setAnnotationName];
+       
         
        // dropPin.coordinate.latitude = [NSNumber numberWithDouble:locCoord.latitude];
        // dropPin.coordinate.longitude = [NSNumber numberWithDouble:locCoord.longitude];
-        [self.mapView addAnnotation:dropPin];
     }
 }
 -(void) setAnnotationName
@@ -66,6 +69,8 @@
         if([enteredtext isEqualToString:@""])
             enteredtext = @"No Label";
         
+        [self.mapView addAnnotation:droppedPin];
+
        // [AddAlarmTableViewController getAlarmData].alarmBody = enteredtext;
       //  [alarmBodyLabel setText:enteredtext];
     }

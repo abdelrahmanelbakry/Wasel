@@ -33,8 +33,15 @@
     CLLocationCoordinate2D coord = {coordinate.latitude, coordinate.longitude};
     return coord;
 }
+-(NSString*) title
+{
+    return name;
+}
 
-
+-(void) setTitle:(NSString *)label
+{
+    name = label;
+}
 
 //
 - (void) encodeWithCoder:(NSCoder *)encoder

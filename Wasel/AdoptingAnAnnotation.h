@@ -18,5 +18,7 @@
 @property (nonatomic) BOOL isFav;
 
 - (id) initWithLatitude:(CLLocationDegrees) lat longitude:(CLLocationDegrees) lng;
+-(NSString*) title;
+-(void) setTitle:(NSString*) label;
 
 @end

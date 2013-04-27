@@ -13,6 +13,7 @@
 @interface ViewController : UIViewController<UITextFieldDelegate,UIAlertViewDelegate>
 {
     UIAlertView* alertView;
+    AdoptingAnAnnotation *droppedPin;
 }
 @property(nonatomic,retain) UILongPressGestureRecognizer *longPressGesture ;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;

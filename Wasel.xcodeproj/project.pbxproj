@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		505CF747172C940300FF5957 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505CF746172C940300FF5957 /* FavoritesTableViewController.m */; };
+		505CF74A172C942400FF5957 /* MapWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505CF749172C942400FF5957 /* MapWebViewController.m */; };
+		505CF74C172C950A00FF5957 /* header_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 505CF74B172C950A00FF5957 /* header_bar@2x.png */; };
 		5076932E1720467300F71C75 /* AdoptingAnAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076932D1720467300F71C75 /* AdoptingAnAnnotation.m */; };
 		50D7AF7817243B53003B7F6A /* AnnotationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D7AF7717243B53003B7F6A /* AnnotationManager.m */; };
 		BC0642B1171AE40000796EBE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0642B0171AE40000796EBE /* MapKit.framework */; };
@@ -25,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		505CF745172C940300FF5957 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
+		505CF746172C940300FF5957 /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
+		505CF748172C942400FF5957 /* MapWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapWebViewController.h; sourceTree = "<group>"; };
+		505CF749172C942400FF5957 /* MapWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapWebViewController.m; sourceTree = "<group>"; };
+		505CF74B172C950A00FF5957 /* header_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header_bar@2x.png"; sourceTree = "<group>"; };
 		5076932C1720467300F71C75 /* AdoptingAnAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdoptingAnAnnotation.h; sourceTree = "<group>"; };
 		5076932D1720467300F71C75 /* AdoptingAnAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdoptingAnAnnotation.m; sourceTree = "<group>"; };
 		50D7AF7617243B53003B7F6A /* AnnotationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationManager.h; sourceTree = "<group>"; };
@@ -95,6 +103,7 @@
 		BCA7B38A171AD50C0085DAB6 /* Wasel */ = {
 			isa = PBXGroup;
 			children = (
+				505CF74B172C950A00FF5957 /* header_bar@2x.png */,
 				BCA7B393171AD50C0085DAB6 /* AppDelegate.h */,
 				BCA7B394171AD50C0085DAB6 /* AppDelegate.m */,
 				BCA7B39C171AD50C0085DAB6 /* MainStoryboard_iPhone.storyboard */,
@@ -106,6 +115,10 @@
 				5076932D1720467300F71C75 /* AdoptingAnAnnotation.m */,
 				50D7AF7617243B53003B7F6A /* AnnotationManager.h */,
 				50D7AF7717243B53003B7F6A /* AnnotationManager.m */,
+				505CF745172C940300FF5957 /* FavoritesTableViewController.h */,
+				505CF746172C940300FF5957 /* FavoritesTableViewController.m */,
+				505CF748172C942400FF5957 /* MapWebViewController.h */,
+				505CF749172C942400FF5957 /* MapWebViewController.m */,
 			);
 			path = Wasel;
 			sourceTree = "<group>";
@@ -181,6 +194,7 @@
 				BCA7B39B171AD50C0085DAB6 /* Default-568h@2x.png in Resources */,
 				BCA7B39E171AD50C0085DAB6 /* MainStoryboard_iPhone.storyboard in Resources */,
 				BCA7B3A1171AD50C0085DAB6 /* MainStoryboard_iPad.storyboard in Resources */,
+				505CF74C172C950A00FF5957 /* header_bar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +210,8 @@
 				BCA7B3A4171AD50C0085DAB6 /* ViewController.m in Sources */,
 				5076932E1720467300F71C75 /* AdoptingAnAnnotation.m in Sources */,
 				50D7AF7817243B53003B7F6A /* AnnotationManager.m in Sources */,
+				505CF747172C940300FF5957 /* FavoritesTableViewController.m in Sources */,
+				505CF74A172C942400FF5957 /* MapWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
