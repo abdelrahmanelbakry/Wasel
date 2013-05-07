@@ -15,7 +15,7 @@
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic,retain) NSString* name;
 @property (nonatomic,retain) NSNumber* identifier;
-@property (nonatomic) BOOL isFav;
+@property (nonatomic) BOOL shouldAlert;
 
 - (id) initWithLatitude:(CLLocationDegrees) lat longitude:(CLLocationDegrees) lng;
 -(NSString*) title;

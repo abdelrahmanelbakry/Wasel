@@ -70,7 +70,7 @@ AnnotationManager* manager =  nil;
     AdoptingAnAnnotation* newAnnotaion = [[AdoptingAnAnnotation alloc]initWithLatitude:annotation.coordinate.latitude longitude:annotation.coordinate.longitude];
     newAnnotaion.name = annotation.name;
     newAnnotaion.identifier = annotation.identifier;
-    newAnnotaion.isFav = annotation.isFav;
+    newAnnotaion.shouldAlert = annotation.shouldAlert;
     
     [annotations addObject:newAnnotaion];
 }

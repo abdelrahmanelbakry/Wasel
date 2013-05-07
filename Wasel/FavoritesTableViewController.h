@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnnotationManager.h"
+#import "FavoriteCell.h"
 
-@interface FavoritesTableViewController : UITableViewController
+@interface FavoritesTableViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+}
+@property (strong, nonatomic) IBOutlet UITableView *table;
 
+-(IBAction) returnToSuperview:(id) sender;
 @end

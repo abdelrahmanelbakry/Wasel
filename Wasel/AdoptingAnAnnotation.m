@@ -14,9 +14,9 @@
 @synthesize coordinate;
 @synthesize name;
 @synthesize identifier;
-@synthesize isFav;
+@synthesize shouldAlert;
 
-#define kFav @"isfav"
+#define kAlert @"shouldAlert"
 #define kName @"name"
 #define kLong @"longtiude"
 #define kLat @"latitude"
@@ -51,7 +51,7 @@
     [encoder encodeObject:identifier forKey:kIdentifier];
     [encoder encodeFloat:coordinate.longitude forKey:kLong ];//:coordinate forKey:kCoord];
     [encoder encodeFloat:coordinate.latitude forKey:kLat];
-    [encoder encodeBool:isFav forKey:kFav];
+    [encoder encodeBool:shouldAlert forKey:kAlert];
 }
 
 - (id)initWithCoder:(NSCoder *)decoder
@@ -62,7 +62,7 @@
         // with [super initWithCoder:decoder] to properly initialize.
         name = [decoder decodeObjectForKey:kName];
         identifier = [ decoder decodeObjectForKey:kIdentifier];
-        isFav = [decoder decodeBoolForKey:kFav];
+        shouldAlert = [decoder decodeBoolForKey:kAlert];
         float lat = [decoder decodeFloatForKey:kLat];
         float lang = [decoder decodeFloatForKey:kLong];
         coordinate.latitude = lat;
